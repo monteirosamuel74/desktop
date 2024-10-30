@@ -1,0 +1,613 @@
+[
+  {
+    "login": "usuario0",
+    "senha": "senha0",
+    "agenda": {
+      "pessoas": [
+        {
+          "nome": "José Ferreira",
+          "dataNascimento": "Jul 17, 1955, 8:42:51 AM",
+          "cpf": "282.690.636-57",
+          "telefones": [
+            {
+              "numero": "11111-9999",
+              "tipoTelefone": "COMERCIAL"
+            },
+            {
+              "numero": "88888-2222",
+              "tipoTelefone": "COMERCIAL"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "josé.ferreira1@example.com"
+            },
+            {
+              "endereco": "josé.ferreira2@example.com"
+            }
+          ]
+        },
+        {
+          "nome": "Ana Souza",
+          "dataNascimento": "May 5, 1974, 8:42:51 AM",
+          "cpf": "096.861.467-85",
+          "telefones": [
+            {
+              "numero": "55555-5555",
+              "tipoTelefone": "COMERCIAL"
+            },
+            {
+              "numero": "11111-9999",
+              "tipoTelefone": "CELULAR"
+            },
+            {
+              "numero": "55555-5555",
+              "tipoTelefone": "CELULAR"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "ana.souza1@teste.com"
+            }
+          ]
+        },
+        {
+          "nome": "Ana Pereira",
+          "dataNascimento": "Sep 13, 1988, 8:42:51 AM",
+          "cpf": "813.246.012-82",
+          "telefones": [
+            {
+              "numero": "66666-4444",
+              "tipoTelefone": "RESIDENCIAL"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "ana.pereira1@example.com"
+            },
+            {
+              "endereco": "ana.pereira2@teste.com"
+            }
+          ]
+        },
+        {
+          "nome": "Fernanda Oliveira",
+          "dataNascimento": "Apr 20, 1981, 8:42:51 AM",
+          "cpf": "904.563.267-11",
+          "telefones": [
+            {
+              "numero": "99999-1111",
+              "tipoTelefone": "RESIDENCIAL"
+            },
+            {
+              "numero": "55555-5555",
+              "tipoTelefone": "COMERCIAL"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "fernanda.oliveira1@email.com"
+            }
+          ]
+        },
+        {
+          "nome": "Carlos Lima",
+          "dataNascimento": "May 30, 1981, 8:42:51 AM",
+          "cpf": "508.519.605-14",
+          "telefones": [
+            {
+              "numero": "99999-1111",
+              "tipoTelefone": "CELULAR"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "carlos.lima1@empresa.com"
+            },
+            {
+              "endereco": "carlos.lima2@example.com"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "login": "usuario1",
+    "senha": "senha1",
+    "agenda": {
+      "pessoas": [
+        {
+          "nome": "Carla Oliveira",
+          "dataNascimento": "Oct 9, 1951, 8:42:51 AM",
+          "cpf": "575.933.931-28",
+          "telefones": [
+            {
+              "numero": "66666-4444",
+              "tipoTelefone": "RESIDENCIAL"
+            },
+            {
+              "numero": "66666-4444",
+              "tipoTelefone": "CELULAR"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "carla.oliveira1@empresa.com"
+            },
+            {
+              "endereco": "carla.oliveira2@email.com"
+            }
+          ]
+        },
+        {
+          "nome": "Carlos Ferreira",
+          "dataNascimento": "Mar 24, 1968, 8:42:51 AM",
+          "cpf": "540.834.413-77",
+          "telefones": [
+            {
+              "numero": "99999-1111",
+              "tipoTelefone": "COMERCIAL"
+            },
+            {
+              "numero": "77777-3333",
+              "tipoTelefone": "RESIDENCIAL"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "carlos.ferreira1@teste.com"
+            }
+          ]
+        },
+        {
+          "nome": "João Lima",
+          "dataNascimento": "Aug 27, 1976, 8:42:51 AM",
+          "cpf": "330.761.465-72",
+          "telefones": [
+            {
+              "numero": "99999-1111",
+              "tipoTelefone": "RESIDENCIAL"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "joão.lima1@teste.com"
+            },
+            {
+              "endereco": "joão.lima2@example.com"
+            }
+          ]
+        },
+        {
+          "nome": "Pedro Costa",
+          "dataNascimento": "Jun 26, 1959, 8:42:51 AM",
+          "cpf": "741.847.540-19",
+          "telefones": [
+            {
+              "numero": "44444-6666",
+              "tipoTelefone": "COMERCIAL"
+            },
+            {
+              "numero": "88888-2222",
+              "tipoTelefone": "CELULAR"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "pedro.costa1@empresa.com"
+            },
+            {
+              "endereco": "pedro.costa2@example.com"
+            },
+            {
+              "endereco": "pedro.costa3@example.com"
+            }
+          ]
+        },
+        {
+          "nome": "João Silva",
+          "dataNascimento": "Aug 22, 1961, 8:42:51 AM",
+          "cpf": "774.671.413-08",
+          "telefones": [
+            {
+              "numero": "66666-4444",
+              "tipoTelefone": "COMERCIAL"
+            },
+            {
+              "numero": "99999-1111",
+              "tipoTelefone": "COMERCIAL"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "joão.silva1@empresa.com"
+            },
+            {
+              "endereco": "joão.silva2@email.com"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "login": "usuario2",
+    "senha": "senha2",
+    "agenda": {
+      "pessoas": [
+        {
+          "nome": "Sofia Oliveira",
+          "dataNascimento": "Dec 15, 1974, 8:42:51 AM",
+          "cpf": "016.499.852-58",
+          "telefones": [
+            {
+              "numero": "33333-7777",
+              "tipoTelefone": "COMERCIAL"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "sofia.oliveira1@empresa.com"
+            },
+            {
+              "endereco": "sofia.oliveira2@empresa.com"
+            },
+            {
+              "endereco": "sofia.oliveira3@example.com"
+            }
+          ]
+        },
+        {
+          "nome": "Paulo Lima",
+          "dataNascimento": "Apr 14, 1970, 8:42:51 AM",
+          "cpf": "056.575.799-57",
+          "telefones": [
+            {
+              "numero": "99999-1111",
+              "tipoTelefone": "COMERCIAL"
+            },
+            {
+              "numero": "22222-8888",
+              "tipoTelefone": "COMERCIAL"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "paulo.lima1@email.com"
+            },
+            {
+              "endereco": "paulo.lima2@example.com"
+            }
+          ]
+        },
+        {
+          "nome": "João Oliveira",
+          "dataNascimento": "Sep 2, 1952, 8:42:51 AM",
+          "cpf": "447.663.404-25",
+          "telefones": [
+            {
+              "numero": "12345-6789",
+              "tipoTelefone": "COMERCIAL"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "joão.oliveira1@email.com"
+            },
+            {
+              "endereco": "joão.oliveira2@empresa.com"
+            },
+            {
+              "endereco": "joão.oliveira3@email.com"
+            }
+          ]
+        },
+        {
+          "nome": "Maria Lima",
+          "dataNascimento": "May 26, 1985, 8:42:51 AM",
+          "cpf": "493.750.929-87",
+          "telefones": [
+            {
+              "numero": "22222-8888",
+              "tipoTelefone": "COMERCIAL"
+            },
+            {
+              "numero": "77777-3333",
+              "tipoTelefone": "RESIDENCIAL"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "maria.lima1@example.com"
+            }
+          ]
+        },
+        {
+          "nome": "Carla Oliveira",
+          "dataNascimento": "Jul 6, 1972, 8:42:51 AM",
+          "cpf": "617.649.372-07",
+          "telefones": [
+            {
+              "numero": "99999-1111",
+              "tipoTelefone": "CELULAR"
+            },
+            {
+              "numero": "55555-5555",
+              "tipoTelefone": "CELULAR"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "carla.oliveira1@empresa.com"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "login": "usuario3",
+    "senha": "senha3",
+    "agenda": {
+      "pessoas": [
+        {
+          "nome": "Ana Pereira",
+          "dataNascimento": "Feb 15, 1982, 8:42:51 AM",
+          "cpf": "626.874.844-03",
+          "telefones": [
+            {
+              "numero": "11111-9999",
+              "tipoTelefone": "COMERCIAL"
+            },
+            {
+              "numero": "77777-3333",
+              "tipoTelefone": "RESIDENCIAL"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "ana.pereira1@example.com"
+            },
+            {
+              "endereco": "ana.pereira2@example.com"
+            },
+            {
+              "endereco": "ana.pereira3@email.com"
+            }
+          ]
+        },
+        {
+          "nome": "Pedro Silva",
+          "dataNascimento": "Apr 9, 1951, 8:42:51 AM",
+          "cpf": "694.632.781-52",
+          "telefones": [
+            {
+              "numero": "88888-2222",
+              "tipoTelefone": "CELULAR"
+            },
+            {
+              "numero": "44444-6666",
+              "tipoTelefone": "RESIDENCIAL"
+            },
+            {
+              "numero": "99999-1111",
+              "tipoTelefone": "COMERCIAL"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "pedro.silva1@example.com"
+            },
+            {
+              "endereco": "pedro.silva2@email.com"
+            },
+            {
+              "endereco": "pedro.silva3@teste.com"
+            }
+          ]
+        },
+        {
+          "nome": "Carla Ferreira",
+          "dataNascimento": "Mar 27, 1956, 8:42:51 AM",
+          "cpf": "537.548.731-80",
+          "telefones": [
+            {
+              "numero": "99999-1111",
+              "tipoTelefone": "CELULAR"
+            },
+            {
+              "numero": "44444-6666",
+              "tipoTelefone": "COMERCIAL"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "carla.ferreira1@email.com"
+            },
+            {
+              "endereco": "carla.ferreira2@example.com"
+            },
+            {
+              "endereco": "carla.ferreira3@teste.com"
+            }
+          ]
+        },
+        {
+          "nome": "Paulo Pereira",
+          "dataNascimento": "Apr 23, 1976, 8:42:51 AM",
+          "cpf": "143.071.377-16",
+          "telefones": [
+            {
+              "numero": "77777-3333",
+              "tipoTelefone": "COMERCIAL"
+            },
+            {
+              "numero": "55555-5555",
+              "tipoTelefone": "CELULAR"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "paulo.pereira1@example.com"
+            },
+            {
+              "endereco": "paulo.pereira2@empresa.com"
+            },
+            {
+              "endereco": "paulo.pereira3@teste.com"
+            }
+          ]
+        },
+        {
+          "nome": "Pedro Rodrigues",
+          "dataNascimento": "Nov 27, 1966, 8:42:51 AM",
+          "cpf": "673.194.539-16",
+          "telefones": [
+            {
+              "numero": "55555-5555",
+              "tipoTelefone": "RESIDENCIAL"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "pedro.rodrigues1@teste.com"
+            },
+            {
+              "endereco": "pedro.rodrigues2@empresa.com"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "login": "usuario4",
+    "senha": "senha4",
+    "agenda": {
+      "pessoas": [
+        {
+          "nome": "Fernanda Pereira",
+          "dataNascimento": "Jan 11, 1956, 8:42:51 AM",
+          "cpf": "140.722.553-68",
+          "telefones": [
+            {
+              "numero": "44444-6666",
+              "tipoTelefone": "COMERCIAL"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "fernanda.pereira1@teste.com"
+            },
+            {
+              "endereco": "fernanda.pereira2@email.com"
+            }
+          ]
+        },
+        {
+          "nome": "Paulo Silva",
+          "dataNascimento": "May 4, 1964, 8:42:51 AM",
+          "cpf": "936.197.408-68",
+          "telefones": [
+            {
+              "numero": "66666-4444",
+              "tipoTelefone": "CELULAR"
+            },
+            {
+              "numero": "12345-6789",
+              "tipoTelefone": "COMERCIAL"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "paulo.silva1@teste.com"
+            },
+            {
+              "endereco": "paulo.silva2@teste.com"
+            }
+          ]
+        },
+        {
+          "nome": "Carlos Costa",
+          "dataNascimento": "Dec 27, 1985, 8:42:51 AM",
+          "cpf": "788.337.623-25",
+          "telefones": [
+            {
+              "numero": "11111-9999",
+              "tipoTelefone": "COMERCIAL"
+            },
+            {
+              "numero": "44444-6666",
+              "tipoTelefone": "CELULAR"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "carlos.costa1@empresa.com"
+            },
+            {
+              "endereco": "carlos.costa2@empresa.com"
+            }
+          ]
+        },
+        {
+          "nome": "José Silva",
+          "dataNascimento": "Oct 2, 1959, 8:42:51 AM",
+          "cpf": "206.245.644-31",
+          "telefones": [
+            {
+              "numero": "99999-1111",
+              "tipoTelefone": "COMERCIAL"
+            },
+            {
+              "numero": "77777-3333",
+              "tipoTelefone": "CELULAR"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "josé.silva1@example.com"
+            },
+            {
+              "endereco": "josé.silva2@example.com"
+            },
+            {
+              "endereco": "josé.silva3@teste.com"
+            }
+          ]
+        },
+        {
+          "nome": "Ana Rodrigues",
+          "dataNascimento": "May 15, 1979, 8:42:51 AM",
+          "cpf": "468.396.211-85",
+          "telefones": [
+            {
+              "numero": "77777-3333",
+              "tipoTelefone": "COMERCIAL"
+            },
+            {
+              "numero": "44444-6666",
+              "tipoTelefone": "RESIDENCIAL"
+            },
+            {
+              "numero": "66666-4444",
+              "tipoTelefone": "COMERCIAL"
+            }
+          ],
+          "emails": [
+            {
+              "endereco": "ana.rodrigues1@example.com"
+            },
+            {
+              "endereco": "ana.rodrigues2@empresa.com"
+            },
+            {
+              "endereco": "ana.rodrigues3@email.com"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
