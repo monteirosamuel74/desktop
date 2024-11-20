@@ -27,6 +27,15 @@ public class Telefone {
 
     @Override
     public String toString() {
-        return numero + " (" + tipoTelefone + ")";
+        return numero;
+    }
+
+    @Override
+    public boolean equals(Object item) {
+         if ((this.numero.equals(((Telefone) item).getNumero()) && 
+             (this.tipoTelefone.equals(((Telefone) item).getTipoTelefone())))){
+              return true;
+         }
+         return false;
     }
 }

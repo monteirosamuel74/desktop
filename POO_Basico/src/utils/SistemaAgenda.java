@@ -7,6 +7,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
+import data.Agenda;
 import data.Email;
 import data.Pessoa;
 import data.Telefone;
@@ -21,21 +22,34 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Type;
 
-public class SistemaAgenda {
-    private List<Usuario> usuarios;
-    private Random random = new Random();
+public final class SistemaAgenda {
+    private static Usuario usuarioLogado;
+    private static List<Usuario> usuarios = new ArrayList<>();
+    private static Random random = new Random();
     private static final String ARQUIVO_JSON = "usuarios.json";
 
     public SistemaAgenda() {
-        this.usuarios = new ArrayList<>();
         popularDados();
     }
 
-    public List<Usuario> getUsuarios() {
+    public static Usuario getUsuarioLogado() {
+        return usuarioLogado;
+    }
+
+    public static void setUsuarioLogado(Usuario usuarioLogado_) {
+        usuarioLogado = usuarioLogado_;
+    }
+
+    public static List<Usuario> getUsuarios() {
         return usuarios;
     }
 
-    public void popularDados() {
+    public static Agenda getAgendaUsuarioLogado() {
+        Usuario usuarioLogado = SistemaAgenda.getUsuarios().get(SistemaAgenda.getUsuarios().indexOf(getUsuarioLogado()));
+        return usuarioLogado.getAgenda();
+    }
+
+    public static void popularDados() {
         // Listas de dados simulados
         String[] nomes = {"Maria", "João", "Ana", "Carlos", "José", "Fernanda", "Paulo", "Carla", "Pedro", "Sofia"};
         String[] sobrenomes = {"Silva", "Souza", "Lima", "Pereira", "Ferreira", "Costa", "Oliveira", "Rodrigues"};
@@ -79,7 +93,7 @@ public class SistemaAgenda {
     }
 
     // Método para gerar um CPF aleatório
-    private String gerarCPF() {
+    private static String gerarCPF() {
         StringBuilder cpf = new StringBuilder();
         for (int i = 0; i < 11; i++) {
             cpf.append(random.nextInt(10));
@@ -93,7 +107,7 @@ public class SistemaAgenda {
     }
 
     // Método para gerar uma data de nascimento aleatória
-    private Date gerarDataNascimentoAleatoria() {
+    private static Date gerarDataNascimentoAleatoria() {
         Calendar calendar = Calendar.getInstance();
         int ano = 1950 + random.nextInt(51); // Gera um ano entre 1950 e 2000
         int mes = random.nextInt(12); // Gera um mês entre 0 e 11
@@ -103,7 +117,7 @@ public class SistemaAgenda {
     }
 
 // Método para serializar a lista de usuários em um arquivo JSON
-    public void serializarUsuarios() {
+    public static void serializarUsuarios() {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();  // Gson com formatação "bonita"
         try (FileWriter writer = new FileWriter(ARQUIVO_JSON)) {
             gson.toJson(usuarios, writer);
@@ -114,7 +128,7 @@ public class SistemaAgenda {
     }
 
     // Método para desserializar o arquivo JSON e popular a lista de usuários
-    public void desserializarUsuarios() {
+    public static void desserializarUsuarios() {
         Gson gson = new Gson();
         try (FileReader reader = new FileReader(ARQUIVO_JSON)) {
             Type usuariosListType = new TypeToken<List<Usuario>>() {}.getType();
@@ -126,20 +140,19 @@ public class SistemaAgenda {
     }
 
     public static void main(String[] args) {
-        SistemaAgenda sistemaAgenda = new SistemaAgenda();
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
         // Serializando os dados dos usuários para um arquivo JSON
-        sistemaAgenda.serializarUsuarios();
+        serializarUsuarios();
 
         // Limpando os dados atuais da lista de usuários
-        sistemaAgenda.getUsuarios().clear();
+        getUsuarios().clear();
 
         // Desserializando os dados do arquivo JSON e carregando na lista de usuários
-        sistemaAgenda.desserializarUsuarios();
+        desserializarUsuarios();
 
         // Exibindo dados dos usuários e suas agendas
-        for (Usuario usuario : sistemaAgenda.getUsuarios()) {
+        for (Usuario usuario : getUsuarios()) {
             System.out.println("Usuário: " + usuario.getLogin());
             for (Pessoa pessoa : usuario.getAgenda().getPessoas()) {
                 System.out.println("  Nome: " + pessoa.getNome());

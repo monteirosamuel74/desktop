@@ -3,6 +3,9 @@ package data;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
+
+import utils.Utilitario;
 
 public class Pessoa {
     private String nome;
@@ -40,11 +43,20 @@ public class Pessoa {
     }
 
     public void setCpf(String cpf) {
-        this.cpf = cpf;
+        if(Utilitario.cpfValido(cpf))
+            this.cpf = cpf;
+        else
+            throw new IllegalArgumentException("CPF inválido");
     }
 
     public List<Telefone> getTelefones() {
         return telefones;
+    }
+
+    public String getTelefonesFormatados() {
+        return telefones.stream()
+                        .map(Telefone::toString)
+                        .collect(Collectors.joining(", "));
     }
 
     public void adicionarTelefone(Telefone telefone) {
@@ -59,6 +71,12 @@ public class Pessoa {
         return emails;
     }
 
+    public String getEmailsFormatados() {
+        return emails.stream()
+                     .map(Email::toString)
+                     .collect(Collectors.joining(", "));
+    }
+
     public void adicionarEmail(Email email) {
         emails.add(email);
     }
@@ -66,5 +84,21 @@ public class Pessoa {
     public void removerEmail(Email email) {
         emails.remove(email);
     }
+
+    @Override
+    public String toString() {
+        return nome + " (" + cpf + ")";
+    }
+
+    @Override
+    public boolean equals(Object item) {
+         if ((this.nome.equals(((Pessoa) item).getNome()) && 
+             (this.dataNascimento.equals(((Pessoa) item).getDataNascimento())) &&
+             (this.cpf.equals(((Pessoa) item).getCpf())))){
+              return true;
+         }
+         return false;
+    }
+
 }
 

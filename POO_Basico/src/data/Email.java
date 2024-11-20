@@ -14,4 +14,17 @@ public class Email {
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
+
+    @Override
+    public String toString() {
+        return endereco;
+    }
+
+    @Override
+    public boolean equals(Object item) {
+         if ((this.endereco.equals(((Email) item).getEndereco()))){
+              return true;
+         }
+         return false;
+    }
 }

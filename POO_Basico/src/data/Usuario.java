@@ -30,5 +30,19 @@ public class Usuario {
     public Agenda getAgenda() {
         return agenda;
     }
+
+    @Override
+    public String toString() {
+        return login;
+    }
+
+    @Override
+    public boolean equals(Object item) {
+         if ((this.login.equals(((Usuario) item).getLogin())) &&
+            (this.senha.equals(((Usuario) item).getSenha()))){
+              return true;
+         }
+         return false;
+    }
 }
 
